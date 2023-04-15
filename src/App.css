@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Tajawal', sans-serif;
+}
+.search-bar {
+    margin-top: 30px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search-bar h3 {
+    color: #D81F26;
+    font-size: 50px;
+}
+.search-input {
+    font-size: 80px;
+    display: flex;
+    justify-content: start;
+    gap: 20px ;
+    align-items: center;
+    border: solid 0.5px gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+.search-input input{
+    font-size: 20px;
+border: none;
+}
+.search-input img {
+    width: 30px;
+    height: 30px;
+}
+    /**/
+    .movie-list{
+        
+        width: 90%;
+        margin: 0px auto;
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .movie-card{
+      margin: 30px;
+        width: 250px;
+        height: 350px;
+        background-size: cover;
+        border-radius: 10px;
+        transition-duration: 0.5s;
+    }
+    .movie-content {
+height: 300p;
+background-color: rgba(0, 0, 0, 0.842);
+display: none;
+color: white;
+padding: 25px ;
+    }
+    .movie-card:hover> .movie-content{
+        display: block;
+
+    }
+    .modal-bg{
+        width: 100vw;
+        height: 100vh;
+        display: flex-start;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.473);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .modal-content {
+        width: 600px ;
+        height: 500px;
+        display: flex-start;
+        flex-direction: column;
+        border-radius: 15px;
+        background-color: white;
+        justify-content: space-around;
+        padding: 40px;
+    }
+    .modal-content input,.modal-content button{
+        padding: 8px;
+    }
+    .modal-content button{
+        color: white;
+        background-color:#D81F26;
+        border: white;
+        border-radius: 20px;
+    }
+    .add button{
+       width: 50px;
+       height: 50px; 
+       background-color: #D81F26;
+    }
